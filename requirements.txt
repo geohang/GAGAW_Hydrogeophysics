@@ -1,0 +1,25 @@
+# Core dependency - PyHydroGeophysX package
+pyhydrogeophysx>=0.1.0
+
+# Scientific computing
+numpy>=1.19.0
+scipy>=1.5.0
+matplotlib>=3.2.0
+
+# Geophysical modeling
+pygimli>=1.3.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+notebook>=6.0.0
+ipykernel>=6.0.0
+
+# Data processing
+pandas>=1.2.0
+tqdm>=4.0.0
+
+# Optional: For GPU acceleration
+# cupy-cuda11x>=10.0.0  # Uncomment and adjust CUDA version as needed
+
+# Optional: For parallel processing
+joblib>=1.0.0

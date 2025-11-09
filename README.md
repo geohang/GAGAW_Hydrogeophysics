@@ -10,6 +10,7 @@ This repository contains practical applications of [PyHydroGeophysX](https://git
 
 - 🤖 **Natural Language Workflows**: Configure complex geophysical processing pipelines using plain English descriptions
 - 📊 **Multi-Method Data Fusion**: Integrate ERT, seismic refraction, and climate data for comprehensive hydrological insights
+- ⏱️ **Time-Lapse Analysis**: AI-powered temporal analysis with automated change detection and interpretation
 - 🔬 **Uncertainty Quantification**: Monte Carlo methods for robust parameter estimation
 - 🎯 **AI-Powered Parameter Estimation**: Automatic petrophysical parameter selection from site descriptions
 - 📝 **Automated Reporting**: AI-generated analysis reports with visualizations
@@ -20,6 +21,7 @@ This repository contains practical applications of [PyHydroGeophysX](https://git
 GAGAW_Hydrogeophysics/
 ├── direct_ERT_converion.ipynb          # Direct ERT to water content conversion
 ├── Ex_DataFusion_NaturalLanguage.ipynb # Multi-method data fusion workflow
+├── Ex_TimeLapse_NaturalLanguage.ipynb  # Time-lapse ERT analysis workflow
 ├── data/                                # Example geophysical data
 │   ├── climate/                         # Climate data and PET estimates
 │   ├── ERT/                             # Electrical resistivity data
@@ -80,10 +82,16 @@ Open and run the Jupyter notebooks:
 jupyter notebook direct_ERT_converion.ipynb
 ```
 
-Or for data fusion:
+For data fusion:
 
 ```bash
 jupyter notebook Ex_DataFusion_NaturalLanguage.ipynb
+```
+
+For time-lapse analysis:
+
+```bash
+jupyter notebook Ex_TimeLapse_NaturalLanguage.ipynb
 ```
 
 ## 📖 Workflows
@@ -151,6 +159,43 @@ to water content considering alpine meadow soil above fractured granite bedrock.
 - Integrated climate data analysis with temporal alignment
 - Comprehensive uncertainty propagation through the workflow
 - Automated visualization and reporting
+
+### 3. Time-Lapse ERT Analysis
+
+**Notebook**: `Ex_TimeLapse_NaturalLanguage.ipynb`
+
+Demonstrates AI-powered temporal analysis of time-lapse ERT data with automated change detection and hydrological interpretation:
+
+**Workflow Components**:
+1. **Time-Series Data Loading**: Automated processing of multiple ERT datasets with temporal alignment
+2. **Temporal Inversion**: Time-lapse inversion with temporal regularization to emphasize changes
+3. **Change Detection**: AI-powered identification of significant resistivity changes through time
+4. **Hydrological Interpretation**: Conversion of temporal resistivity changes to water content dynamics
+5. **Climate Correlation**: Integration with precipitation and PET data to explain observed changes
+6. **Trend Analysis**: Statistical analysis of temporal patterns and seasonal variations
+
+**Example Natural Language Request**:
+```
+"Process time-lapse ERT data from October to June. Apply temporal regularization 
+to detect changes. Convert to water content time series and correlate with 
+precipitation events. Generate a report showing seasonal dynamics."
+```
+
+**Methodology**:
+- Automated temporal data alignment and quality control
+- Adaptive temporal regularization based on expected change rates
+- AI-guided selection of reference models (baseline vs. sequential)
+- Statistical change detection with significance testing
+- Multi-realization uncertainty quantification for temporal trends
+- Climate-hydrology correlation analysis
+- Automated time-series visualization with climate overlays
+- Comprehensive temporal analysis reports
+
+**Key Capabilities**:
+- Handle irregularly-spaced time-series data
+- Identify and interpret different types of changes (seasonal, event-driven, gradual trends)
+- Provide hydrological context through climate data integration
+- Quantify uncertainty in temporal change estimates
 
 ## 📊 Example Data
 

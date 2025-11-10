@@ -283,7 +283,7 @@ If you use these workflows in your research, please cite:
 @software{gagaw2024,
   author = {Chen, Hang },
   title = {GAGAW Hydrogeophysics: AI-Powered Geophysical Analysis Workflows},
-  year = {2024},
+  year = {2025},
   publisher = {GitHub},
   url = {https://github.com/geohang/GAGAW_Hydrogeophysics}
 }

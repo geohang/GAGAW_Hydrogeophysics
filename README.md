@@ -225,16 +225,6 @@ ERT measures subsurface electrical resistivity by injecting current and measurin
 
 Convert resistivity (ρ) to water content (θ) using the Waxman-Smits model:
 
-$$
-\rho = \frac{\rho_w \cdot F}{\left(1 + \frac{B \cdot Q_v}{\sigma_w}\right)}
-$$
-
-Where:
-- F = a·φ⁻ᵐ (formation factor, Archie's Law)
-- φ = porosity
-- m = cementation exponent
-- ρ_w = pore water resistivity
-- Q_v, B = clay parameters
 
 ### Uncertainty Quantification
 
@@ -291,11 +281,11 @@ If you use these workflows in your research, please cite:
 **This repository**:
 ```bibtex
 @software{gagaw2024,
-  author = {Chen, Hang and Niu, Qifei},
+  author = {Chen, Hang },
   title = {GAGAW Hydrogeophysics: AI-Powered Geophysical Analysis Workflows},
   year = {2024},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/GAGAW_Hydrogeophysics}
+  url = {https://github.com/geohang/GAGAW_Hydrogeophysics}
 }
 ```
 

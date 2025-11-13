@@ -490,9 +490,9 @@ This project is licensed under the Apache License 2.0 - the same license as PyHy
 
 ## 🙏 Acknowledgments
 
-- **PyHydroGeophysX** development team (Hang Chen, Qifei Niu, Yuxin Wu) for the multi-agent framework
-- **PyGIMLi** team (Carsten Rücker, Thomas Günther, Florian Wagner) for geophysical modeling and inversion
-- **RESIPY** developers (Guillaume Blanchy, Andrew Binley, et al.) for ERT data processing
+- **PyHydroGeophysX** development team for the multi-agent framework
+- **PyGIMLi** for geophysical modeling and inversion
+- **RESIPY** developers for ERT data processing
 - **OpenAI**, **Google DeepMind**, and **Anthropic** for LLM APIs powering AQUAH's natural language understanding
 - **Streamlit** team for the web application framework
 - **DayMet** and **Open-Meteo** for climate data APIs
@@ -530,40 +530,6 @@ Data in this repository comes from:
 - [DayMet](https://daymet.ornl.gov/) - North American daily meteorological data
 - [Open-Meteo](https://open-meteo.com/) - Global weather API
 
-## 🎓 Why AQUAH?
-
-### Traditional Approach vs. AQUAH
-
-| Aspect | Traditional Workflow | AQUAH Workflow |
-|--------|---------------------|----------------|
-| **Input** | Python code, manual configuration | Natural language description |
-| **Expertise Required** | Programming + Geophysics | Domain knowledge only |
-| **Workflow Selection** | Manual agent initialization | Automatic detection |
-| **Parameter Tuning** | Trial and error | AI-guided selection |
-| **Multi-Method Fusion** | Manual coordination | Automatic orchestration |
-| **Results** | Raw data files | Interpreted reports + visualizations |
-| **Learning Curve** | Steep (weeks) | Gentle (hours) |
-| **Reproducibility** | Code-dependent | Natural language descriptions |
-
-### AQUAH Advantages
-
-✅ **Accessibility**: No programming required - describe what you want in plain English  
-✅ **Intelligent**: LLM-powered understanding of geological context and parameter selection  
-✅ **Flexible**: Supports three workflow types with automatic detection  
-✅ **Comprehensive**: End-to-end processing from raw data to interpreted results  
-✅ **Reproducible**: Natural language descriptions are shareable and version-controllable  
-✅ **Educational**: Learn best practices through examples and AI-generated insights  
-✅ **Extensible**: Built on PyHydroGeophysX's modular architecture  
-
-### Workflow Comparison
-
-| Workflow Type | Data Inputs | Key Features | Best For | Example Use Case |
-|--------------|-------------|--------------|----------|-----------------|
-| **Standard ERT** | Single ERT file | • Topography support<br>• Petrophysical conversion<br>• Uncertainty quantification | Basic subsurface characterization | Soil moisture mapping |
-| **Time-Lapse ERT** | Multiple ERT files over time | • Temporal regularization<br>• Climate data integration<br>• Change detection | Monitoring dynamics | Infiltration monitoring, seasonal changes |
-| **Data Fusion** | Seismic + ERT | • Structure constraints<br>• Layer-specific parameters<br>• Cross-method validation | Complex geology | Bedrock interface mapping |
-
----
 
 ## 📜 Note
 

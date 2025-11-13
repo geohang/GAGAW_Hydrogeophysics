@@ -2,7 +2,16 @@
 
 ## AQUAH: Autonomous Query-driven Understanding Agent for Hydrogeophysics
 
-This repository demonstrates practical applications of [PyHydroGeophysX](https://github.com/geohang/PyHydroGeophysX)'s **AQUAH** system - an AI-powered multi-agent framework for automated geophysical data processing and hydrogeological analysis.
+This repository demonstrates the **GAGAW (Generalizable Automated Geophysical Agent Workflow)** framework applied to hydrogeophysics, implemented as **AQUAH** within [PyHydroGeophysX](https://github.com/geohang/PyHydroGeophysX).
+
+### About GAGAW and AQUAH
+
+**GAGAW** is a generalizable automated geophysical agent workflow framework for subsurface characterization (Chen, 2025, *Geophysical Research Letters*, under review). **AQUAH** represents the hydrogeophysics-specific implementation of GAGAW, providing:
+
+- 🤖 **AI-Powered Multi-Agent System** built on the GAGAW framework
+- 🌊 **Hydrogeophysics Focus** for subsurface water content and hydrological properties
+- 🗣️ **Natural Language Interface** for intuitive workflow descriptions
+- 🔄 **Three Workflow Types** optimized for hydrological applications
 
 ## 📋 Overview
 
@@ -296,7 +305,8 @@ AQUAH provides a user-friendly web interface built with Streamlit, making geophy
 
 5. **Run and download results**!
 
-![AQUAH Web Interface Screenshot - showing the Configuration panel, Natural Language input, and Results display](docs/images/aquah_webapp.png)
+![AQUAH Web Interface](web.png)
+*AQUAH web interface showing Configuration panel, Natural Language input area, and file upload zones*
 
 ## 📊 Example Data
 
@@ -456,29 +466,39 @@ Please open an issue or submit a pull request.
 
 If you use AQUAH or these workflows in your research, please cite:
 
-**PyHydroGeophysX and AQUAH system**:
+**GAGAW Framework** (Primary Citation):
+```bibtex
+@article{chen2025gagaw,
+  author = {Chen, Hang},
+  title = {A Generalizable Automated Geophysical Agent Workflow in Subsurface Hydrology},
+  journal = {Geophysical Research Letters},
+  year = {2025},
+  note = {under review}
+}
+```
+
+**PyHydroGeophysX Package** (Software Implementation):
 ```bibtex
 @software{chen2025pyhydrogeophysx,
   author = {Chen, Hang and Niu, Qifei and Wu, Yuxin},
   title = {PyHydroGeophysX: An Extensible Open-Source Platform for Bridging 
-           Hydrological Models and Geophysical Measurements with AI-Powered 
-           Multi-Agent Workflows},
+           Hydrological Models and Geophysical Measurements},
   year = {2025},
   publisher = {Water Resources Research (under review)},
   url = {https://github.com/geohang/PyHydroGeophysX}
 }
 ```
 
-**AQUAH Demonstration Repository**:
+**AQUAH Demonstration Repository** (Applications):
 ```bibtex
 @software{gagaw2025aquah,
   author = {Chen, Hang},
-  title = {AQUAH: Autonomous Query-driven Understanding Agent for Hydrogeophysics - 
-           Demonstration Workflows},
+  title = {GAGAW Hydrogeophysics: AQUAH (Autonomous Query-driven Understanding Agent 
+           for Hydrogeophysics) - Demonstration Workflows},
   year = {2025},
   publisher = {GitHub},
   url = {https://github.com/geohang/GAGAW_Hydrogeophysics},
-  note = {Natural language interface for automated geophysical data processing}
+  note = {Implementation of GAGAW framework for hydrogeophysical applications}
 }
 ```
 
@@ -565,7 +585,9 @@ Data in this repository comes from:
 
 ## 📜 Note
 
-**This repository demonstrates AQUAH - the AI-powered natural language interface for geophysical data processing.**
+**This repository demonstrates AQUAH - the hydrogeophysics-specific implementation of the GAGAW framework.**
+
+The **GAGAW (Generalizable Automated Geophysical Agent Workflow)** framework provides a generalizable approach to automated geophysical data processing across different applications. **AQUAH** implements GAGAW specifically for hydrogeophysical analysis, focusing on subsurface water content and hydrological property estimation.
 
 The included field datasets from Wyoming and Colorado are for demonstration and educational purposes. AQUAH can be applied to any ERT, seismic, or multi-method geophysical dataset with appropriate configuration.
 
@@ -573,4 +595,4 @@ The included field datasets from Wyoming and Colorado are for demonstration and 
 
 ---
 
-*Last Updated: 2025 | AQUAH Version: 1.0 | PyHydroGeophysX: v0.1.0*
+*Last Updated: 2025 | GAGAW Framework | AQUAH Version: 1.0 | PyHydroGeophysX: v0.1.0*

@@ -102,23 +102,53 @@ GAGAW_Hydrogeophysics/
 
 ### Quick Start
 
-#### Option 1: Web Application (Recommended) 🌐
+#### Option 1: Web Application 🌐
 
-The easiest way to use AQUAH is through the web interface:
+AQUAH provides a user-friendly web interface built with Streamlit, making geophysical analysis accessible without coding.
 
-```bash
-cd GAGAW_Hydrogeophysics
-streamlit run app_geophysics_workflow.py
-```
+**Features:**
+- **📝 Natural Language Input**: Describe your workflow in a text box
+- **📤 File Upload**: Drag-and-drop ERT data, seismic data, and electrode files
+- **🔄 Automatic Detection**: AQUAH automatically identifies workflow type
+- **⚙️ Multiple LLM Support**: Choose between OpenAI (GPT-4), Google (Gemini), or Anthropic (Claude)
+- **📊 Results Dashboard**: 
+  - AI-generated interpretation and insights
+  - Execution plan visualization
+  - Key metrics (resistivity range, water content, model quality)
+  - Interactive plots and visualizations
+- **💾 Download Results**: One-click download of reports, models, and figures
 
-The web app will open in your browser at `http://localhost:8501`. Simply:
-1. Configure your LLM API key in the sidebar
-2. Click "Initialize System"
-3. Describe your workflow in plain English
-4. Upload your data files (or specify paths)
-5. Click "Run Workflow" and get results!
+**How to Use:**
 
-![AQUAH Web Interface](https://github.com/user-attachments/assets/your-screenshot-here)
+1. **Launch the app**:
+   ```bash
+   cd GAGAW_Hydrogeophysics
+   streamlit run app_geophysics_workflow.py
+   ```
+   The web app will open in your browser at `http://localhost:8501`
+
+2. **Configure** (in sidebar):
+   - Select LLM provider (OpenAI/Gemini/Claude)
+   - Enter API key
+   - Set output directory
+   - Click "Initialize System"
+
+3. **Describe your workflow**:
+   ```
+   Example: "Run time-lapse ERT on 4 E4D files from March to June 2022.
+   Fetch climate data for coordinates (38.93°N, -107.0°W).
+   Apply temporal regularization of 10."
+   ```
+
+4. **Upload files** (optional):
+   - ERT data files (.ohm, .dat, .Data)
+   - Seismic data (.dat, .txt)
+   - Electrode positions (.dat, .txt)
+
+5. **Run and download results**!
+
+![AQUAH Web Interface](web.png)
+*AQUAH web interface showing Configuration panel, Natural Language input area, and file upload zones*
 
 #### Option 2: Jupyter Notebooks
 
@@ -259,54 +289,6 @@ Characterize subsurface water content using multi-method data fusion:
 - ✅ Layer-specific petrophysical parameter distributions
 - ✅ Cross-method validation and consistency checking
 - ✅ Comprehensive uncertainty propagation through workflow
-
-## 🌐 Web Application Interface
-
-AQUAH provides a user-friendly web interface built with Streamlit, making geophysical analysis accessible without coding:
-
-### Features
-
-- **📝 Natural Language Input**: Describe your workflow in a text box
-- **📤 File Upload**: Drag-and-drop ERT data, seismic data, and electrode files
-- **🔄 Automatic Detection**: AQUAH automatically identifies workflow type
-- **⚙️ Multiple LLM Support**: Choose between OpenAI (GPT-4), Google (Gemini), or Anthropic (Claude)
-- **📊 Results Dashboard**: 
-  - AI-generated interpretation and insights
-  - Execution plan visualization
-  - Key metrics (resistivity range, water content, model quality)
-  - Interactive plots and visualizations
-- **💾 Download Results**: One-click download of reports, models, and figures
-
-### How to Use
-
-1. **Launch the app**:
-   ```bash
-   cd GAGAW_Hydrogeophysics
-   streamlit run app_geophysics_workflow.py
-   ```
-
-2. **Configure** (in sidebar):
-   - Select LLM provider (OpenAI/Gemini/Claude)
-   - Enter API key
-   - Set output directory
-   - Click "Initialize System"
-
-3. **Describe your workflow**:
-   ```
-   Example: "Run time-lapse ERT on 4 E4D files from March to June 2022.
-   Fetch climate data for coordinates (38.93°N, -107.0°W).
-   Apply temporal regularization of 10."
-   ```
-
-4. **Upload files** (optional):
-   - ERT data files (.ohm, .dat, .Data)
-   - Seismic data (.dat, .txt)
-   - Electrode positions (.dat, .txt)
-
-5. **Run and download results**!
-
-![AQUAH Web Interface](web.png)
-*AQUAH web interface showing Configuration panel, Natural Language input area, and file upload zones*
 
 ## 📊 Example Data
 

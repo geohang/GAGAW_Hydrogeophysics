@@ -6,7 +6,8 @@ This repository demonstrates the **GAGAW (Generalizable Automated Geophysical Ag
 
 ### About GAGAW and AQUAH
 
-**GAGAW** is a generalizable automated geophysical agent workflow framework for subsurface characterization (Chen, 2025, *Geophysical Research Letters*, under review). **AQUAH** represents the hydrogeophysics-specific implementation of GAGAW, providing:
+Try the web application here https://pyhydrogeophysx.streamlit.app/ !
+**GAGAW** is a generalizable automated geophysical agent workflow framework for subsurface characterization (Chen, 2026). **AQUAH** represents the hydrogeophysics-specific implementation of GAGAW, providing:
 
 - 🤖 **AI-Powered Multi-Agent System** built on the GAGAW framework
 - 🌊 **Hydrogeophysics Focus** for subsurface water content and hydrological properties
